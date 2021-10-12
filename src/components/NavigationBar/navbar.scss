@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+.nav-bar {
+  float: left;
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 25px;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: $mainColor;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: $mainColor;
+    color: white;
+  }
+
+  li a.active {
+    color: white;
+    background-color: #04aa6d;
+  }
+}

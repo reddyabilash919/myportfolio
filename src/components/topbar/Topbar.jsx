@@ -1,5 +1,6 @@
 import './topbar.scss'
 import {Person,Mail} from "@material-ui/icons"
+import Navbar from '../NavigationBar/Navbar'
 
 export default function Topbar({menu,setMenu}) {
     return (
@@ -15,6 +16,9 @@ export default function Topbar({menu,setMenu}) {
                     <Mail className="icon"/>
                     <span>reddyabilash919@gmail.com</span>
                     </div>
+                </div>
+                <div className="middle-section">
+                    <Navbar />
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>{
