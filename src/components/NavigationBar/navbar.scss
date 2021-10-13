@@ -1,37 +1,82 @@
 @import "../../global.scss";
 
+// .nav-bar {
+//   float: left;
+//   //   padding-left: 50px;
+//   //   padding-right: 50px;
+
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     overflow: hidden;
+//     background-color: white;
+//     // font-size: 20px;
+//     // font-weight: 300;
+//   }
+
+//   li {
+//     float: left;
+//   }
+
+//   li a {
+//     display: block;
+//     color: $mainColor;
+//     text-align: center;
+//     padding: 14px 45px;
+//     text-decoration: none;
+
+//     &.active {
+//       background-color: $mainColor;
+//       color: white;
+//     }
+//   }
+
+//   li a:hover:not(.active) {
+//     background-color: $mainColor;
+//     color: white;
+//   }
+// }
+
 .nav-bar {
-  float: left;
-  //   padding-left: 50px;
-  //   padding-right: 50px;
+  background-color: white;
+  color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 25px;
-    overflow: hidden;
-    background-color: white;
-  }
+    margin: 5px;
+    padding: 0px 5px;
+    list-style: none;
+    display: flex;
 
-  li {
-    float: left;
-  }
+    li a {
+      font-size: 20px;
+      font-weight: 300;
 
-  li a {
-    display: block;
-    color: $mainColor;
-    text-align: center;
-    padding: 14px 45px;
-    text-decoration: none;
-  }
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-right: 10px;
+      margin-left: 10px;
+      color: $mainColor;
 
-  li a:hover:not(.active) {
-    background-color: $mainColor;
-    color: white;
-  }
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
 
-  li a.active {
-    color: white;
-    background-color: #04aa6d;
+      &.active {
+        background-color: $mainColor;
+        color: white;
+        font-weight: 500;
+      }
+      &:hover:not(.active) {
+        background-color: $mainColor;
+        color: white;
+        font-weight: 500;
+      }
+    }
   }
 }
