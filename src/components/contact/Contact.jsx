@@ -4,8 +4,7 @@ import {useState} from 'react';
 
 export default function Contact() {
 
-    const [message,setMessage] = useState(false)
-
+    const [message,setMessage] = useState(false);
     const handleSubmit =(e)=>{
         e.preventDefault();
         setMessage(true);
@@ -27,7 +26,6 @@ export default function Contact() {
                     }
                 </form>
             </div>
-          
         </div>
     )
 }

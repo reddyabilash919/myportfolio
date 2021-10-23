@@ -10,15 +10,15 @@ export default function Menu({menu,setMenu}) {
                 </li>
                 
                  <li onClick={()=>{setMenu(!menu)}}>
-                    <a href="#portfolio">Postfolio</a>
+                    <a href="#portfolio">About</a>
                 </li>
                  <li onClick={()=>{setMenu(!menu)}}>
                     <a href="#works">Works</a>
                 </li>
                 
-                 <li onClick={()=>{setMenu(!menu)}}>
+                 {/* <li onClick={()=>{setMenu(!menu)}}>
                     <a href="#testimonials">Testimonials</a>
-                </li>
+                </li> */}
                 
                   <li onClick={()=>{setMenu(!menu)}}>
                     <a href="#contact">Contact</a>

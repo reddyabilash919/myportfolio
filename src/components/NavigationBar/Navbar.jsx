@@ -30,7 +30,7 @@ export default function Navbar() {
                         setNavWorks('');
                         setNavTestiomonials('');
                         setNavContact('');
-                    }}>Postfolio</a>
+                    }}>About</a>
                 </li>
                  <li >
                     <a href="#works" className={navWorks}  onClick={()=>{
@@ -42,7 +42,7 @@ export default function Navbar() {
                     }}>Works</a>
                 </li>
                 
-                 <li >
+                 {/* <li >
                     <a href="#testimonials" className={navTestiomonials}  onClick={()=>{
                         setNavHome("");
                         setNavPortfolio('');
@@ -50,7 +50,7 @@ export default function Navbar() {
                         setNavTestiomonials('active');
                         setNavContact('');
                     }}>Testimonials</a>
-                </li>
+                </li> */}
                 
                   <li >
                     <a href="#contact" className={navContact}  onClick={()=>{
